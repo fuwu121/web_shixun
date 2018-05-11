@@ -1,0 +1,477 @@
+body,ul {
+    margin:  0;
+    padding: 0;
+}
+.container{
+    /*标明div功能和样式*/
+    width:100%;
+    height: 100%;
+    /*background: #71AFD6;*/
+    background-image: url("");
+}
+.container .main{
+    height: 90%;
+    width: 100%;
+    /*background: #71AFD6;*/
+    display: table;
+    margin: 0 auto;/*div居中显示*/
+}
+.container .head{
+    height: 50px;
+    width: 100%;
+    background: dodgerblue;
+    border-radius:0px 0px 10px 10px;
+    margin: 0 auto;/*div居中显示*/
+    padding-top: 5px;
+    border-top: solid 5px dodgerblue;
+    border-bottom: solid 5px dodgerblue;
+}
+.head .person-center{
+    width: 150px;
+    margin: 0 auto;/*div居中显示*/
+    margin-left: 30px;
+    margin-top: 7px;
+}
+.head img{
+    vertical-align: middle;
+    margin: 0 auto;/*div居中显示*/
+}
+.self-center{
+    vertical-align: middle;
+    margin: 0 auto;/*div居中显示*/
+    color: white;
+}
+.main-selfInfo{
+    width: 800px;
+    height: 300px;
+    background-image: url("../images/self_background-2.jpg");
+    /*vertical-align: middle;*/
+    /*background-position: bottom;*/
+    margin: auto;
+    /*div居中显示*/
+    border-radius:10px 10px 0 0;
+    margin-top: 40px;
+    /*设置圆角边框*/
+}
+.avatar{
+    text-align: center;
+}
+.nickname{
+    text-align: center;
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    margin-left: 340px;
+    margin-top: 40px;
+}
+.aboutme{
+    text-align: center;
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 10px;
+    margin: 0 auto;/*div居中显示*/
+    margin-top: 10px;
+}
+.avatar img{
+    border-radius: 100%;
+    display: inline-block;
+    margin-top: 30px;
+}
+.nav{
+    width: 800px;
+    height: 45px;
+    background: #E6D6BC;
+    text-align: center;
+    border-radius:0px 0px 10px 10px;
+    margin: 0 auto;/*div居中显示*/
+    /*border-bottom: solid 1px black;*/
+}
+/*标签不用点引用*/
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    /*使平铺在一行*/
+}
+.nav ul li{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    line-height: 50px;
+}
+.nav ul li:hover a{
+    border-bottom: solid 2.8px #FF8140;
+    padding-bottom: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.nav ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    /*margin: 20px;*/
+}
+.main-left .content{
+    line-height: 25px;
+    padding: 30px;
+    padding-top: 8px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: "Times New Roman";
+}
+.main-left .button{
+    width: 12%;
+    height: 38px;
+    color: white;
+    margin-left: 30px;
+    border: none;
+    background: #E67E22;
+    cursor: pointer;//实现鼠标停留小手显示
+}
+.main-left .line-small{
+    background: lightgray;
+    width: 89%;
+    margin: 30px;
+    /*padding-right: 30px;*/
+    height: 1px;
+    margin-bottom: 20px;
+}
+.main-content .main-content-left{
+    width: 35%;
+    height: 50%;
+    /*background: #99CCFF;*/
+    margin-right: 20px;
+    border-radius:10px 10px 10px 10px;/*设置圆角边框*/
+}
+.main-left .line-large{
+    background: #EBEBEB;
+    /*margin-top: 10px;*/
+    width: 100%;
+    /*padding-right: 30px;*/
+    height: 40px;
+}
+.main-left img{
+    margin-left: 30px;
+}.main-left .myIMG{
+     margin-left: 100px;
+     width: 550px;
+ }
+.main-content-right .loadmore{
+    margin-top: -160px;
+}
+.main .main-left{
+    height:100%;
+    width: 65%;
+    background: white;
+    margin-left: 110px;
+    margin-right: 30px;
+}
+.main-content{
+    margin: 0 auto;/*div居中显示*/
+    margin-top: 20px;
+    width: 800px;
+    height: 1000px;
+    /*background: #71AFD6;*/
+    display: flex;
+    flex-direction: row;
+}
+.main-content .main-content-left{
+    width: 30%;
+    height: 600px;
+    background: #99CCFF;
+    margin-right: 20px;
+    border-radius:10px 10px 10px 10px;//设置圆角边框
+
+}
+.main-content .main-content-left .main-content-left-top{
+    width: 90%;
+    height: 100px;
+    background: #EBEBEB;
+    margin: auto;
+    margin-top: 10px;
+}
+.main-content .main-content-left .main-content-left-top p {
+    margin-left: 50px;
+}
+.main-content .main-content-right{
+    width: 70%;
+    height: 100%;
+    background: #99CCFF;
+    border-radius:10px 10px 10px 10px;//设置圆角边框
+}
+.main-content-left .main-content-left-top{
+    height: 13%;
+    width: 100%;
+    background: #151D2A;
+    margin-bottom: 20px;
+    border-radius:10px 10px 10px 10px;/*设置圆角边框*/
+    display: flex;
+    flex-direction: row;
+    border: solid 2px gray;
+}
+.following, .fans, .blogs{
+    margin: 0 auto;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.num{
+    text-decoration: none;
+    color:#99CCFF;
+    font-family: 微软雅黑;
+}
+.num:hover{
+    color: #38B2FF;
+    font-size: 20px;
+}
+.tag{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    font-family: "等线 Light";
+}
+.main-content-left .main-content-left-center{
+    height: 22%;
+    width: 100%;
+    background: #151D2A;
+    border-radius:10px 10px 10px 10px;/*设置圆角边框*/
+    margin-bottom: 20px;
+    border: solid 2px gray;
+}
+.personal-info{
+    display: flex;
+    flex-direction: row;
+}
+.personal-info .personal-info-left{
+    width: 70px;
+    margin-left: 13px;
+    font-size: 10px;
+    color: white;
+}
+.personal-info .personal-info-right{
+    font-size: 10px;
+    color: white;
+}
+.album{
+    font-size: 15px;
+    font-family: "微软雅黑 Light";
+    color: white;
+    /*padding-bottom: 10px;*/
+    padding-top: 6px;
+    padding-left: 120px;
+}
+.images{
+    border-top: solid 2px gray;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.main-content-left .main-content-left-bottom{
+    height: 68%;
+    width: 100%;
+    margin-bottom: 10px;
+    background:#151D2A ;
+    border-radius:10px 10px 10px 10px;/*设置圆角边框*/
+    border: solid 2px gray;
+}
+.footer{
+    height: 15%;
+    background: #6699FF;
+    border-radius:20px 20px 0px 0px;/*设置圆角边框*/
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family:"微软雅黑 Light";
+}
+.footer-left, .footer-center, .footer-right{
+    margin: 0 auto;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+.footer-left{
+    margin-left: 400px;
+    margin-right: 50px;
+}
+.footer-right{
+    margin-right: 400px;
+    margin-left: 50px;
+}
+.footer-left-title, .footer-center-title, .footer-right-title{
+    width: 150px;
+    margin-left: 20px;
+    border-bottom: solid 1px white;
+}
+.footer-left-content .tag{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 18px;
+}
+.footer-right-content .tag{
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: 19px;
+}
+.footer-left-content .tag a, .footer-right-content .tag a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 10px;
+    padding: 2px 10px;
+    color: white;
+    display: inline-block;
+    margin: 0 7px 7px 8px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease-in-out;
+}
+.copyright{
+    height: 10%;
+    width: 100%;
+    background: #6699FF;
+    border-top: solid 2px white;
+    border-radius:0px 0px 20px 20px;/*设置圆角边框*/
+    margin: 0 auto;
+}
+.copyright-content{
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 10px;
+    color: white;
+}
+.main-content-left .main-content-left-top{
+    height: 13%;
+    width: 100%;
+    background: #151D2A;
+    margin-bottom: 20px;
+    border-radius:10px 10px 10px 10px;/*设置圆角边框*/
+    display: flex;
+    flex-direction: row;
+    border: solid 2px gray;
+}
+.following, .fans, .blogs{
+    margin: 0 auto;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.num{
+    text-decoration: none;
+    color:#99CCFF;
+    font-family: 微软雅黑;
+}
+.num:hover{
+    color: #38B2FF;
+    font-size: 20px;
+}
+.tag{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    font-family: "等线 Light";
+}
+.main-content-left .main-content-left-center{
+    height: 22%;
+    width: 100%;
+    background: #151D2A;
+    border-radius:10px 10px 10px 10px;/*设置圆角边框*/
+    margin-bottom: 20px;
+    border: solid 2px gray;
+}
+.personal-info{
+    display: flex;
+    flex-direction: row;
+}
+.personal-info .personal-info-left{
+    width: 70px;
+    margin-left: 13px;
+    font-size: 10px;
+    color: white;
+}
+.personal-info .personal-info-right{
+    font-size: 10px;
+    color: white;
+}
+.album{
+    font-size: 15px;
+    font-family: "微软雅黑 Light";
+    color: white;
+    /*padding-bottom: 10px;*/
+    padding-top: 6px;
+    padding-left: 120px;
+}
+.images{
+    border-top: solid 2px gray;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.main-content-left .main-content-left-bottom{
+    height: 68%;
+    width: 100%;
+    margin-bottom: 10px;
+    background:#151D2A ;
+    border-radius:10px 10px 10px 10px;/*设置圆角边框*/
+    border: solid 2px gray;
+}
+.diary-container{
+    height: 100%;
+    width: 100%;
+}
+.diary-caption{
+    font-family: "微软雅黑 Light";
+    font-size: 20px;
+    text-align: center;
+    padding: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+}
+.diary-content{
+    color: white;
+    line-height: 25px;
+    padding: 30px;
+    padding-top: 8px;
+    font-size: 14px;
+    text-align: justify;
+    font-family: "微软雅黑 Light";
+}
+.diary-image{
+    /*这里一定要规定容器大小！*/
+    height: 230px;
+    width: 100%;
+}
+.diary-image img{
+    width: 270px;
+    height: 220px;
+    margin-left: 110px;
+    margin-bottom: 1px;
+}
+.diary-status{
+    height: 30px;
+    width: 100%;
+}
+.diary-status img{
+    margin-left: 20px;
+}
+.diary-date{
+    font-size: 4px;
+    font-family: "微软雅黑 Light";
+    color: white;
+    margin-left: 290px;
+}
+.diary-likes{
+    font-size: 4px;
+    font-family: "微软雅黑 Light";
+    color: white;
+}
+.diary-line{
+    height: 1px;
+    background: gray;
+    margin-top: 5px;
+}

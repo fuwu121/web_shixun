@@ -1,0 +1,440 @@
+body,ul {
+    margin:  0;
+    padding: 0;
+}
+.container{
+    /*标明div功能和样式*/
+    width:100%;
+    height: 100%;
+    background:#EBEBEB;
+}
+/*head--------------------------*/
+.head{
+    width: 100%;
+    /*background: gray;*/
+    height: 10%;
+}
+.head .logo{
+    width: 100%;
+    height: 225px;
+    background: gray;
+    /*作为背景,可控*/
+    background-image: url("http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg");
+    padding-top: 10px;
+    /*background-position: 0 -100px;*/
+    /*x轴 y轴*/
+    background-size: cover;
+    text-align: center;
+}
+.logo-pic{
+    margin-top: 60px;
+}
+.head .nav{
+    width: 100%;
+    height: 50px;
+    background: white;
+    text-align: center;
+}
+/*标签不用点引用*/
+.head .nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /*使平铺在一行*/
+}
+.head .nav ul li{
+    margin-left: 15px;
+    width: 80px;
+    height: 50px;
+    /*background: yellow;*/
+    text-align: center;
+    line-height: 50px;
+}
+.head .nav ul li:first-child{
+    border-bottom: solid 3px orange;
+}
+.head .nav ul li:hover a{
+    color:orange;
+    transition: all 0.2s ease-in-out;
+}
+.head .nav ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgba(22, 22, 22, 0.82);
+    transition: all 0.2s ease-in-out;
+}
+/*head_end--------------------------*/
+/*main_start------------------------ */
+.main{
+    /*width: 90%;*/
+    width: 100%;
+    /*970-1170:普通屏*/
+    /*1170 up:高清屏*/
+    /*750-970:平板*/
+    /*750 down:手机*/
+    /*height: 400px;*/
+    background: #EBEBEB;
+    /*margin: auto;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*使得间隔条居中*/
+    /*弹性布局*/
+    height: 80%;
+    margin-top: 30px;
+    /*距离上元素边界值*/
+}
+.main .main-left{
+    height:100%;
+    width: 65%;
+    background: white;
+    margin-left: 110px;
+    margin-right: 50px;
+}
+.main-left .title{
+    font-size: 35px;
+    text-align: center;
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.main-left .author{
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: gray;
+}
+.author-name{
+    color: #E67E22;
+}
+.main-left .content{
+    line-height: 25px;
+    padding: 30px;
+    padding-top: 8px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: "Times New Roman";
+}
+.main-left .button{
+    width: 12%;
+    height: 38px;
+    color: white;
+    margin-left: 30px;
+    border: none;
+    background: #E67E22;
+    cursor: pointer;/*实现鼠标停留小手显示*/
+}
+.main-left .line-small{
+    background: lightgray;
+    width: 89%;
+    margin: 30px;
+    /*padding-right: 30px;*/
+    height: 1px;
+    margin-bottom: 20px;
+}
+.main-left .line-large{
+    background: #EBEBEB;
+    /*margin-top: 10px;*/
+    width: 100%;
+    /*padding-right: 30px;*/
+    height: 40px;
+}
+.main-left img{
+    margin-left: 30px;
+}.main-left .myIMG{
+    margin-left: 100px;
+    width: 550px;
+}
+.main-left .page-index .div-previous{
+    flex: 4;
+    /*background: red;*/
+    text-align: right;
+}
+.main-left .page-index .div-index{
+    flex: 2;
+    text-align: center;
+}
+.main-left .page-index .div-next{
+    flex: 4;
+}
+.main-left .page-index .btn-pre,.main-left .page-index .btn-next{
+    height: 35px;
+    width: 30px;
+    color: white;
+    background: #E67E22;
+    margin: 2px;
+    cursor: pointer;
+    /*实现鼠标停留小手显示*/
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+.main-left .page-index .btn-in{
+    height: 35px;
+    width: 130px;
+    background: #E67E22;
+    color: white;
+    margin: 2px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+.main .main-right{
+    height: 1200px;
+    width: 30%;
+    background: #EBEBEB;
+    margin-right: 80px;
+}
+.main .main-right .main-right-top{
+    width: 100%;
+    height: 15%;
+    background:white;
+    border-bottom: solid 20px #EBEBEB;
+}
+.main .main-right .main-right-middle{
+    width: 100%;
+    height: 10%;
+    background:white;
+    border-bottom: solid 20px #EBEBEB;
+}
+.main .main-right .main-right-bottom{
+    width: 100%;
+    height: 25%;
+    background: white;
+    border-bottom: solid 20px #EBEBEB;
+}
+
+/*main_end---------------------------------*/
+.footer{
+    width: 100%;
+    height: 8%;
+    background: #202020;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    border-top: solid 20px #EBEBEB;
+    /*justify-content:间距平分*/
+    /*justify-content: flex-start;//可实现左、中、右对齐*/
+    flex-wrap: wrap;
+}
+/*@media  screen and (min-width: 1170px) {*/
+/*.footer .footer-left, .footer .footer-center, .footer .footer-right {*/
+/*!*width: 30%;*!*/
+/*!*height: 300px;*!*/
+/*min-width: 320px;*/
+/*!*height: 200px;*!*/
+/*!*background: yellow;*!*/
+/*border: solid 1px white;*/
+/*color: white;*/
+/*}*/
+/*}*/
+/*@media only screen and (min-width: 950px) and (max-width: 1170px){*/
+/*.footer .footer-left,.footer .footer-center,.footer .footer-right{*/
+/*!*width: 30%;*!*/
+/*!*height: 300px;*!*/
+/*min-width: 320px;*/
+/*!*height: 200px;*!*/
+/*!*background: yellow;*!*/
+/*border: solid 1px white;*/
+/*color: white;*/
+/*}*/
+/*}*/
+/*@media only screen and (min-width: 750px) and (max-width: 950px){*/
+/*.footer .footer-left,.footer .footer-center,.footer .footer-right{*/
+/*flex: 1;*/
+/*min-width: 320px;*/
+/*!*height: 200px;*!*/
+/*background: #202020;*/
+/*border: solid 1px white;*/
+/*color: white;*/
+/*}*/
+/*@media only screen and (max-width: 750px){*/
+/*.footer .footer-left,.footer .footer-center,.footer .footer-right{*/
+/*flex: 1;*/
+/*min-width: 320px;*/
+/*!*height: 200px;*!*/
+/*background: #202020;*/
+/*border: solid 1px white;*/
+/*color: white;*/
+/*!*display: none;*!*/
+/*}*/
+/*}*/
+.footer .footer-left,.footer .footer-center,.footer .footer-right{
+    background: #202020;
+    flex: 1;
+    height: 100%;
+    min-width: 320px;
+    margin-left: 35px;
+    border-left: solid 30px #202020;
+    border-right: solid 50px #202020;
+}
+/*or 采用以下形式*/
+/*.footer div{*/
+/*width: 25%;*/
+/*height: 300px;*/
+/*background: white;*/
+/*}*/
+.copyright{
+    width: 100%;
+    height: 2%;
+    background: #111111;
+    justify-content: center;
+    display: flex;
+}
+.copyright p{
+    margin:10px
+}
+.footer-left .footer-left-top p{
+    margin-left: 50px;
+    margin-top: 15px;
+    /*border-bottom: solid 1px white;*/
+    /*border-length: 1px;*/
+    /*border-bottom-width: 3px;*/
+}.footer-center .footer-center-top p{
+     margin-left: 50px;
+     margin-top: 15px;
+     /*border-bottom: solid 1px white;*/
+     /*border-length: 1px;*/
+     /*border-bottom-width: 3px;*/
+ }.footer-right .footer-right-top p{
+      margin-left: 50px;
+      margin-top: 15px;
+      /*border-bottom: solid 1px white;*/
+      /*border-length: 1px;*/
+      /*border-bottom-width: 3px;*/
+  }
+.main-right .main-right-top, .main-right-middle{
+    align-items: left;
+}
+.main-right .main-right-top .title, .main-right-middle .title, .main-right-bottom .title{
+    font-size: 20px;
+    font-family: 等线;
+    text-align: left;
+    padding:15px ;
+    /*border-bottom: solid 1px lightgray; width: 100%;*/
+    padding-bottom: 5px;
+}
+
+.line-1, .line-2, .line-3{
+    height: 1px;
+    width: 100%;
+    background: lightgray;
+    margin-top: 1px;
+}
+.line-11, .line-22, .line-33{
+    height: 1px;
+    width: 30%;
+    margin-left: 15px;
+    background: #E67E22;
+    margin-top: -6px;
+}
+.main-right .main-right-top .content-QQ, .main-right-middle .content{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    text-align: left;
+    padding-top: 10px;
+    padding-left:15px ;
+    margin-left: 10px;
+}
+.main-right .main-right-top .content-Link{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    text-align: left;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+.main-right .main-right-top .content-Link a{
+    list-style: none;
+    text-decoration: none;
+    color: #E67E22;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.main-right .main-right-middle .content .button{
+    width: 90%;
+    height: 40px;
+    background: #E67E22;
+    color: white;
+    margin: 15px;
+    border: none;
+    margin-left: 6px;
+}
+.main-right .main-right-middle a .button{
+    cursor: pointer;//实现鼠标停留小手显示
+}
+.main-right .main-right-bottom .tag{
+    margin-top: 10px;
+}
+.main-right .main-right-bottom .tag a{
+    list-style: none;
+    text-decoration: none;
+    color: gray;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    border: 1px solid #ebebeb;
+    padding: 2px 10px;
+    color: #959595;
+    line-height: 1.5em;
+    display: inline-block;
+    margin: 0 7px 7px 8px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.footer-left-bottom, .footer-right-bottom{
+    margin-left: 30px;
+}
+.footer-center-bottom{
+    margin-left: 50px;
+}
+.footer-left-bottom .tag a, .footer-center-bottom .tag a, .footer-right-bottom .tag a{
+    list-style: none;
+    text-decoration: none;
+    color: gray;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    /*border: 1px solid #ebebeb;*/
+    padding: 2px 8px;
+    color: #959595;
+    line-height: 1.5em;
+    display: inline-block;
+    margin: 0 10px 10px 10px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;//实现缓冲效果
+}
+.footer-center-bottom .tag a{
+    border: 0.1px solid #303030;
+    margin: 1px;
+}
+.main-left .page-index{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.line-4, .line-5, .line-6{
+    height: 1px;
+    width: 100%;
+    background: lightgray;
+    margin-top: 18px;
+    align-items: left;
+    margin-left: 50px;
+}
+.line-44, .line-55, .line-66{
+    height: 1px;
+    width: 30%;
+    margin-left: 15px;
+    background: #E67E22;
+    margin-top:-1px;
+    align-items: left;
+    margin-bottom: 10px;
+}
+/*------下拉菜单--------------------*/
+ul.menu, ul.menu li{margin:0px;padding:0px;list-style:none;position:relative;}
+ul.menu li{line-height:15px;}
+ul.menu li{margin-left:10px;}
+ul.menu div{display:none;position:center;left:0px;}
+ul.menu div a{display:block;height: 30px;padding-bottom: 10px;margin-top: 1px;}
+ul.menu li:hover div{display:block;color: orange;}

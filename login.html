@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-2.1.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="main">
+            <div class="title">
+                Log in with
+            </div>
+            <div class="title-image">
+                <div class="img-container">
+                    <div class="img">
+                        <img src="images/login-github.png" alt="">
+                    </div>
+                    <div class="img-title">
+                        Github
+                    </div>
+                </div>
+                <div class="img-container">
+                    <div class="img">
+                        <img src="images/login-google.png" alt="">
+                    </div>
+                    <div class="img-title">
+                        Google
+                    </div>
+                </div>
+                <div class="img-container">
+                    <div class="img">
+                        <img src="images/login-bitbucket.png" alt="">
+                    </div>
+                    <div class="img-title">
+                        Bitbucket
+                    </div>
+                </div>
+                <div class="img-container">
+                    <div class="img">
+                        <img src="images/login-facebook.png" alt="">
+                    </div>
+                    <div class="img-title">
+                        Facebook
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-1"></div>
+            <div class="txt-or">OR</div>
+            <div class="login"></div>
+            <div class="copy-right"></div>
+
+            <div class="form-login">
+                <form action="index.html" name="myLogin" id="myForm" onsubmit="return login()">
+                    <!--<label for="myName">name:</label>-->
+                    <input type="email" class="txt-email" name="txtEmail" id="myEmail" placeholder="email" required>
+                    <br>
+                    <input type="password" class="txt-password" name="txtPass" id="myPass" placeholder="password" minlength="6" required>
+                    <br>
+                    <input type="submit" class="btn-login" value="Log in" id="myLogin">
+                    <a href="#" > Forgot your password?</a>
+                </form>
+            </div>
+
+            <div class="login-bottom">
+                © Copyright 2017, D2C. All rights reserved.
+            </div>
+        </section>
+
+    </div>
+
+    <script type="text/javascript">
+
+
+        function login() {
+            let email='webshixun@outlook.com';
+            let password='123456';
+
+            let e=$('#myEmail').val();   //val value
+
+            let p=$('#myPass').val();
+
+            if(e==email && p==password){
+                sessionStorage.setItem('id',e);
+                return true;
+            }else {
+                alert('用户名或密码错误');
+                return false;
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

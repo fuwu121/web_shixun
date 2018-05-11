@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home-Page</title>
+    <!--第一步：显示样式-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--第二步：规定行为-->
+    <script src="js/jquery-2.1.1.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="head">
+        <div class="logo">
+            <img class="logo-pic" src="http://static.ghostchina.com/image/b/46/4f5566c1f7bc28b3f7ac1fada8abe.png" height="68" width="60"/>
+        </div>
+        <div class="nav">
+            <!--<a href="http://www.baidu.com">baidu</a>-->
+            <ul>
+                <li><a href="">师大要闻</a></li>
+                <li><a href="http://90xq.ahnu.edu.cn/">90年校庆</a></li>
+                <li><a href="http://kyc.ahnu.edu.cn/">师大科研</a></li>
+                <li><a href="http://yz.ahnu.edu.cn/">研招网</a></li>
+                <li><a href="http://ci.ahnu.edu.cn/">计信学院</a></li>
+                <ul class="menu">
+                    <li><a href="">关于我们</a>
+                        <div>
+                            <a href="introduction_1.html">赵文浩</a>
+                            <a href="introduction_2.html">庞刘成</a>
+                            <a href="introduction_3.html">符恒坤</a>
+                        </div>
+                    </li>
+                </ul>
+                <!--<li><a href="introduction_1.html">关于我们</a></li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-left" id="main-left">
+            <div class="article-container" id="article-container">
+                <!--待追加-->
+            </div>
+            <div class="page-index">
+                <div class="div-previous">
+                    <input onclick="page_minus()" onmouseover="this.style.backgroundColor='lightblue'" onmouseleave="this.style.backgroundColor=''"type="button" value="<" class="btn-pre" id="btn_pre">
+                </div>
+                <div class="div-index">
+                    <input type="button" value="" class="btn-in" id="btn_in">
+                </div>
+                <div class="div-next">
+                    <input onclick="page_add()" onmouseover="this.style.backgroundColor='lightblue'" onmouseleave="this.style.backgroundColor=''"type="button" value=">" class="btn-next" id="btn_next">
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="main-right-top">
+                <div class="title">
+                    社交师大
+                    <div class="line-1"></div>
+                </div>
+                <div class="line-11"></div>
+                <div class="content">
+                    <div class="content-QQ">
+                        <p>师大官Q：2078547993</p>
+                    </div>
+                    <div class="content-Link">
+                        <p>
+                            <img src="images/tieba.png" height="18" width="18"/>
+                            <a href="http://tieba.baidu.com/f?ie=utf-8&kw=%E5%AE%89%E5%BE%BD%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&red_tag=e0144118175">师大贴吧</a>
+                        </p>
+                        <p>
+                            <img src="images/weibo.png" height="18" width="18"/>
+                            <a href="https://weibo.com/u/5267903798">师大微博</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right-middle">
+                <div class="title">
+                    师大官网
+                    <div class="line-2"></div>
+                </div>
+                <div class="line-22"></div>
+                <div class="content">
+                    <a href="http://www.ahnu.edu.cn">
+                        <input type="button" onmouseover="this.style.backgroundColor='black'" onmouseleave="this.style.backgroundColor=''" class="button" value="安  徽  师  范  大  学" >
+                    </a>
+                </div>
+            </div>
+            <div class="main-right-bottom">
+                <div class="title">
+                    标签云
+                    <div class="line-3"></div>
+                </div>
+                <div class="line-33"></div>
+                <div class="tag">
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/ke-hu-duan/">客户端</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/android/">Android</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/jquery/">jQuery</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/ghost-0-7-ban-ben/">Ghost 0.7 版本</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/opensource/">开源</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/zhu-shou-han-shu/">助手函数</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/tag-cloud/">标签云</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/navigation/">导航</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/customize-page/">自定义页面</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/static-page/">静态页面</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/roon-io/">Roon.io</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/configuration/">配置文件</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/upyun/">又拍云存储</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/upload/">上传</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/handlebars/">Handlebars</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/email/">邮件</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/yong-hu-zhi-nan/">用户指南</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag/shortcut/">快捷键</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''" href="http://www.ghostchina.com/tag-cloud/">...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            <div class="footer-left-top">
+                <p style="font-family: 微软雅黑;font-size: 20px;color: white;">友情链接</p>
+            </div>
+            <div class="line-4"></div>
+            <div class="line-44"></div>
+            <div class="footer-left-bottom">
+                <div class="tag">
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.bootcss.com/">北京师范大学</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://lodashjs.com/">浙江师范大学</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="https://www.jquery123.com/">中国科学技术大学</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="https://www.webpackjs.com/">浙江大学</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="https://www.nodeapp.cn/">中南大学</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="https://www.quanzhanketang.com/">北京大学</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.91php.com/">杭州电子科技大学</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="https://www.npmjs.com.cn/">上海交通大学</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.sasschina.com/">南开大学</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center">
+            <div class="footer-center-top">
+                <p style="font-family: 微软雅黑;font-size: 20px;color: white">标签云</p>
+            </div>
+            <div class="line-5"></div>
+            <div class="line-55"></div>
+            <div class="footer-center-bottom">
+                <div class="tag">
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/about-ghost/">Ghost</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/release/"> 新版本发布</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/javascript/">JavaScript</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/promise/">Promise</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/zhuti/">主题</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/nodejs/">Node.js</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/mysql/">MySQL</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/nginx/">Nginx</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/aliyun-ecs/">阿里云服务器</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/ubuntu/">Ubuntu</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/ghost-in-depth/">深度玩转 Ghost</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/theme/">Theme</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/zhu-shou-han-shu/">助手函数</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/markdown/">Markdown</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag/proxy/">反向代理</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="http://www.ghostchina.com/tag-cloud/">...</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-right-top">
+                <p style="font-family: 微软雅黑;font-size: 20px;color: white">开发者链接</p>
+            </div>
+            <div class="line-6"></div>
+            <div class="line-66"></div>
+            <div class="footer-right-bottom">
+                <div class="tag">
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="introduction_1.html">赵文浩</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="introduction_2.html">庞刘成</a>
+                    <a onmouseover="this.style.backgroundColor='#E67E22';this.style.color='white'" onmouseleave="this.style.backgroundColor='';this.style.color=''"href="introduction_3.html">符恒坤</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="font-family: 微软雅黑;font-size: 10px;color: gray">Copyright © 安徽师范大学  |  皖ICP备11008151号  |  京公网安备11010802014853 (纯属编造)</p>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
